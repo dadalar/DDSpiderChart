@@ -22,7 +22,7 @@ pod "DDSpiderChart"
 
 ## Author
 
-dadalar, deniz@valensas.com
+Deniz Adalar, me@dadalar.net
 
 ## License
 

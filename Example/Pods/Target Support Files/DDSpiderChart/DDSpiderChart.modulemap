@@ -1,0 +1,6 @@
+framework module DDSpiderChart {
+  umbrella header "DDSpiderChart-umbrella.h"
+
+  export *
+  module * { export * }
+}
