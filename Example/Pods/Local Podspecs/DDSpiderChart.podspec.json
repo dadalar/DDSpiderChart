@@ -1,15 +1,14 @@
 {
   "name": "DDSpiderChart",
   "version": "0.1.0",
-  "summary": "A short description of DDSpiderChart.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Easy to use Spider (Radar) Chart library for iOS written in Swift.",
   "homepage": "https://github.com/dadalar/DDSpiderChart",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "dadalar": "deniz@valensas.com"
+    "Deniz Adalar": "me@dadalar.net"
   },
   "source": {
     "git": "https://github.com/dadalar/DDSpiderChart.git",

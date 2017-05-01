@@ -1,29 +1,53 @@
 import UIKit
 import XCTest
-import DDSpiderChart
+@testable import DDSpiderChart
 
 class Tests: XCTestCase {
-    
+
+    var spiderChartView: DDSpiderChartView!
+
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        spiderChartView = DDSpiderChartView(frame: .zero)
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        spiderChartView = nil
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testDataSetViews() {
+        spiderChartView.axes = ["Axis 1", "Axis 2"]
+
+        // On the initial state, we shouldn't have any inner views yet
+        XCTAssertEqual(spiderChartView.views.count, 0)
+
+        let v1 = spiderChartView.addDataSet(values: [1.0, 0.5], color: .white, animated: false)!
+        XCTAssertEqual(spiderChartView.views, [v1])
+
+        let v2 = spiderChartView.addDataSet(values: [0.3, 0.5], color: .red, animated: false)!
+        XCTAssertEqual(spiderChartView.views, [v1, v2])
+
+        let v3 = spiderChartView.addDataSet(values: [0.3, 0.5], color: .brown, animated: false)
+        XCTAssertEqual(spiderChartView.views, [v1, v2, v3!])
+        spiderChartView.removeDataSetView(v3!)
+        XCTAssertEqual(spiderChartView.views, [v1, v2])
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testInvalidInput() {
+        spiderChartView.axes = ["Axis 1"]
+        XCTAssertEqual(spiderChartView.views.count, 0)
+
+        spiderChartView.addDataSet(values: [1, 0], color: .white, animated: false) // 2 values for 1 axis is no good
+        XCTAssertEqual(spiderChartView.views.count, 0)
     }
-    
+
+    func testViewSize() {
+        spiderChartView.circleCount = 10
+        spiderChartView.circleGap = 10
+        XCTAssertGreaterThan(spiderChartView.intrinsicContentSize.height, 200)
+        XCTAssertGreaterThan(spiderChartView.intrinsicContentSize.width, 200)
+    }
+
 }

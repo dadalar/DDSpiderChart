@@ -1,11 +1,14 @@
 use_frameworks!
 
+def standard_pods
+    pod 'DDSpiderChart', :path => '../'
+end
+
 target 'DDSpiderChart_Example' do
-  pod 'DDSpiderChart', :path => '../'
+    standard_pods
+end
 
-  target 'DDSpiderChart_Tests' do
+target 'DDSpiderChart_Tests' do
     inherit! :search_paths
-
-    
-  end
+    standard_pods
 end

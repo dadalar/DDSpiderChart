@@ -17,7 +17,7 @@ import UIKit
             views = []
         }
     }
-    private var views: [DDSpiderChartDataSetView] = [] // DDSpiderChartDataSetView's currently being presented
+    var views: [DDSpiderChartDataSetView] = [] // DDSpiderChartDataSetView's currently being presented
     
     @IBInspectable public var color: UIColor = .gray {
         didSet {

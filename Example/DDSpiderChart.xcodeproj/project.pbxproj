@@ -15,17 +15,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		FB3A58681EB7F7DF00950D7E /* DDSpiderChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3A58671EB7F7DF00950D7E /* DDSpiderChart.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = DDSpiderChart;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		385E050853BC48695309168B /* Pods_DDSpiderChart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDSpiderChart_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,14 +30,15 @@
 		607FACE51AFB9204008FA782 /* DDSpiderChart_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDSpiderChart_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		655F189735898E12624EAC94 /* DDSpiderChart.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DDSpiderChart.podspec; path = ../DDSpiderChart.podspec; sourceTree = "<group>"; };
-		6E3CCD98E35EE038E64279AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		655F189735898E12624EAC94 /* DDSpiderChart.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DDSpiderChart.podspec; path = ../DDSpiderChart.podspec; sourceTree = "<group>"; };
+		6E3CCD98E35EE038E64279AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6F38D6BD364074313DA06F35 /* Pods-DDSpiderChart_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSpiderChart_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B0955A8AD40536282F15885E /* Pods-DDSpiderChart_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSpiderChart_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6FAE7F1BFD36F112EC88155 /* Pods_DDSpiderChart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDSpiderChart_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F376DA039E62A427366438EF /* Pods-DDSpiderChart_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSpiderChart_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F3EA3B209F41A6C298FA68FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F3EA3B209F41A6C298FA68FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F6AACBCBF4ED89551F22CAE7 /* Pods-DDSpiderChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSpiderChart_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FB3A58671EB7F7DF00950D7E /* DDSpiderChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DDSpiderChart.framework; path = "Pods/../build/Debug-iphoneos/DDSpiderChart/DDSpiderChart.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3A58681EB7F7DF00950D7E /* DDSpiderChart.framework in Frameworks */,
 				5F4E2671011D1CF70730D282 /* Pods_DDSpiderChart_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +146,7 @@
 		DD8AB8D57033EC572FF1F5DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB3A58671EB7F7DF00950D7E /* DDSpiderChart.framework */,
 				385E050853BC48695309168B /* Pods_DDSpiderChart_Example.framework */,
 				D6FAE7F1BFD36F112EC88155 /* Pods_DDSpiderChart_Tests.framework */,
 			);
@@ -196,7 +190,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
 			name = DDSpiderChart_Tests;
 			productName = Tests;
@@ -220,7 +213,6 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0820;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -376,14 +368,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* DDSpiderChart_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -526,6 +510,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/DDSpiderChart",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -546,6 +531,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/DDSpiderChart",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
