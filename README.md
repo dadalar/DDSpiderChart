@@ -15,8 +15,8 @@ Easy to use Spider (Radar) Chart library for iOS written in Swift.
 ## Requirements
 
 - iOS 8.0+ / macOS 10.10+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 8.x
-- Swift 3.x
+- Xcode 8.0+
+- Swift 3.0+
 
 ## Installation
 
@@ -67,7 +67,7 @@ Text Styling: (It just works by passing an array of NSAttributedString's as axes
 // Custom font with custom size & color example
 func attributedAxisLabel(_ label: String) -> NSAttributedString {
   let attributedString = NSMutableAttributedString()
-  attributedString.append(NSAttributedString(string: label, attributes: [NSForegroundColorAttributeName: UIColor.black, NSFontAttributeName: UIFont(name: "AvenirNextCondensed-Bold", size: 16)!]))
+  attributedString.append(NSAttributedString(string: label, attributes: [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: UIFont(name: "AvenirNextCondensed-Bold", size: 16)!]))
   return attributedString
 }
     
