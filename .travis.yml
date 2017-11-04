@@ -1,6 +1,28 @@
-osx_image: xcode8.3
-language: objective-c
+matrix:
+  include:
+    - os: osx
+      language: objective-c
+      osx_image: xcode9
+      xcode_sdk: 11.0
+      env: SWFT=4.0
+    - os: osx
+      language: objective-c
+      osx_image: xcode9
+      xcode_sdk: 11.0
+      env: SWFT=3.2
+    - os: osx
+      language: objective-c
+      osx_image: xcode8.3
+      xcode_sdk: 10.3
+      env: SWFT=3.0
+
+before_install:
+  - NAME="iPhone SE";
+    export UUID=$(instruments -s | ruby -e "ARGF.each_line{ |ln| ln =~ /$NAME .* \[(.*)\]/; if \$1; puts(\$1); exit; end }");
+      
 podfile: Example/Podfile
 script:
-- set -o pipefail && xcodebuild test -workspace Example/DDSpiderChart.xcworkspace -scheme DDSpiderChart-Example -sdk iphonesimulator10.3 -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+  - open -b com.apple.iphonesimulator --args -CurrentDeviceUDID "$UUID";
+    set -o pipefail && xcodebuild test -workspace Example/DDSpiderChart.xcworkspace -scheme DDSpiderChart-Example -destination "id=$UUID" SWIFT_VERSION=$SWFT ONLY_ACTIVE_ARCH=NO | xcpretty;
+  - echo $SWFT > .swift-versio
+    pod lib lint --verbose

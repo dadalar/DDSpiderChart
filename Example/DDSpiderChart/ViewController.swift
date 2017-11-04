@@ -25,13 +25,13 @@ class ViewController: UIViewController {
     // Custom font with custom size & color example
     func attributedAxisLabelSample1(_ label: String) -> NSAttributedString {
         let attributedString = NSMutableAttributedString()
-        attributedString.append(NSAttributedString(string: label, attributes: [NSForegroundColorAttributeName: UIColor.black, NSFontAttributeName: UIFont(name: "AvenirNextCondensed-Bold", size: 16)!]))
+        attributedString.append(NSAttributedString(string: label, attributes: [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: UIFont(name: "AvenirNextCondensed-Bold", size: 16)!]))
         return attributedString
     }
 
     func attributedAxisLabelSample2(_ label: String) -> NSAttributedString {
         let attributedString = NSMutableAttributedString()
-        attributedString.append(NSAttributedString(string: label, attributes: [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "AvenirNextCondensed-Bold", size: 16)!]))
+        attributedString.append(NSAttributedString(string: label, attributes: [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "AvenirNextCondensed-Bold", size: 16)!]))
         return attributedString
     }
 

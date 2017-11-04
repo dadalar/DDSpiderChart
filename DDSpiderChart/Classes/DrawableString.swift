@@ -22,11 +22,19 @@ extension NSString: DrawableString {
         style.lineBreakMode = .byClipping
         style.alignment = .center
 
+        #if swift(>=4.0)
+            draw(with: rect, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.paragraphStyle: style], context: nil)
+        #else
         draw(with: rect, options: .usesLineFragmentOrigin, attributes: [NSParagraphStyleAttributeName: style], context: nil)
+        #endif
     }
 
     public func size() -> CGSize {
+        #if swift(>=4.0)
+        return size(withAttributes: nil)
+        #else
         return size(attributes: nil)
+        #endif
     }
 
 }
