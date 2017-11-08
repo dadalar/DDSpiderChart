@@ -18,7 +18,7 @@ import UIKit
         }
     }
     var views: [DDSpiderChartDataSetView] = [] // DDSpiderChartDataSetView's currently being presented
-    
+
     @IBInspectable public var color: UIColor = .gray {
         didSet {
             setNeedsDisplay()
@@ -35,7 +35,7 @@ import UIKit
     }
     @IBInspectable public var circleGap: CGFloat = 10 {
         didSet {
-            views.forEach {                
+            views.forEach {
                 $0.radius = circleRadius
                 $0.setNeedsDisplay()
             }
@@ -44,7 +44,7 @@ import UIKit
 
     @discardableResult public func addDataSet(values: [Float], color: UIColor, animated: Bool = true) -> UIView? {
         guard values.count == axes.count else { return nil }
-        
+
         let view = DDSpiderChartDataSetView(radius: circleRadius, values: values, color: color)
         view.frame = bounds
         view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
@@ -82,7 +82,7 @@ extension DDSpiderChartView {
             color.set()
             circlePath.stroke()
         }
-        
+
         // Draw each data set
         for (index, axis) in axes.enumerated() {
             // Draw line
@@ -94,9 +94,9 @@ extension DDSpiderChartView {
             let y = center.y + (circleRadius + circleGap) * sin(angle)
             linePath.addLine(to: CGPoint(x: x, y: y))
             linePath.stroke()
-            
+
             // Draw circle at the end the line
-            let circleCenter = CGPoint(x: center.x + (circleRadius + circleGap * 3/2)  * cos(angle), y: center.x + (circleRadius + circleGap * 3/2)  * sin(angle))
+            let circleCenter = CGPoint(x: center.x + (circleRadius + circleGap * 3/2) * cos(angle), y: center.y + (circleRadius + circleGap * 3/2) * sin(angle))
             let circlePath = UIBezierPath(arcCenter: circleCenter, radius: circleGap/2, startAngle: 0, endAngle: CGFloat(2 * Float.pi), clockwise: true)
             circlePath.stroke()
 
@@ -104,10 +104,11 @@ extension DDSpiderChartView {
             let isOnTop = sin(angle) < 0 // we should draw text on top of the circle when circle is on the upper half. (and vice versa)
 
             let categoryStringSize = axis.size()
-            let categoryStringOrigin = CGPoint(x: circleCenter.x-categoryStringSize.width/2, y: circleCenter.y+(isOnTop ? (-(categoryStringSize.height+10)) : (10)))
+            let categoryStringPadding = circleGap/2 + 5
+            let categoryStringOrigin = CGPoint(x: circleCenter.x-categoryStringSize.width/2, y: circleCenter.y+(isOnTop ? (-(categoryStringSize.height+categoryStringPadding)) : (categoryStringPadding)))
             axis.drawDrawable(with: .init(origin: categoryStringOrigin, size: categoryStringSize))
         }
-        
+
     }
 }
 
@@ -130,3 +131,4 @@ extension DDSpiderChartView {
     }
 
 }
+

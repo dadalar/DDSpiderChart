@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DDSpiderChart'
-  s.version          = '0.2'
+  s.version          = '0.3'
   s.summary          = 'Easy to use Spider (Radar) Chart library for iOS written in Swift.'
 
   s.homepage         = 'https://github.com/dadalar/DDSpiderChart'
