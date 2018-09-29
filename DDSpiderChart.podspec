@@ -1,18 +1,10 @@
-#
-# Be sure to run `pod lib lint DDSpiderChart.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'DDSpiderChart'
-  s.version          = '0.3'
+  s.version          = '0.4'
   s.summary          = 'Easy to use Spider (Radar) Chart library for iOS written in Swift.'
 
   s.homepage         = 'https://github.com/dadalar/DDSpiderChart'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots      = 'https://raw.githubusercontent.com/dadalar/DDSpiderChart/master/Screenshots/sample1.png', 'https://raw.githubusercontent.com/dadalar/DDSpiderChart/master/Screenshots/sample2.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Deniz Adalar' => 'me@dadalar.net' }
   s.source           = { :git => 'https://github.com/dadalar/DDSpiderChart.git', :tag => s.version.to_s }
