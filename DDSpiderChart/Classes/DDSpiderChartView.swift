@@ -41,6 +41,11 @@ import UIKit
             }
         }
     }
+    @IBInspectable public var endLineCircles: Bool = true {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
 
     @discardableResult public func addDataSet(values: [Float], color: UIColor, animated: Bool = true) -> UIView? {
         guard values.count == axes.count else { return nil }
@@ -95,10 +100,12 @@ extension DDSpiderChartView {
             linePath.addLine(to: CGPoint(x: x, y: y))
             linePath.stroke()
 
-            // Draw circle at the end the line
-            let circleCenter = CGPoint(x: center.x + (circleRadius + circleGap * 3/2) * cos(angle), y: center.y + (circleRadius + circleGap * 3/2) * sin(angle))
-            let circlePath = UIBezierPath(arcCenter: circleCenter, radius: circleGap/2, startAngle: 0, endAngle: CGFloat(2 * Float.pi), clockwise: true)
-            circlePath.stroke()
+            if endLineCircles {
+                // Draw circle at the end the line
+                let circleCenter = CGPoint(x: center.x + (circleRadius + circleGap * 3/2) * cos(angle), y: center.y + (circleRadius + circleGap * 3/2) * sin(angle))
+                let circlePath = UIBezierPath(arcCenter: circleCenter, radius: circleGap/2, startAngle: 0, endAngle: CGFloat(2 * Float.pi), clockwise: true)
+                circlePath.stroke()
+            }
 
             // Draw axes label
             let isOnTop = sin(angle) < 0 // we should draw text on top of the circle when circle is on the upper half. (and vice versa)
