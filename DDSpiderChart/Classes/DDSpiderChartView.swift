@@ -100,9 +100,10 @@ extension DDSpiderChartView {
             linePath.addLine(to: CGPoint(x: x, y: y))
             linePath.stroke()
 
+            var circleCenter = 0.0
             if endLineCircles {
                 // Draw circle at the end the line
-                let circleCenter = CGPoint(x: center.x + (circleRadius + circleGap * 3/2) * cos(angle), y: center.y + (circleRadius + circleGap * 3/2) * sin(angle))
+                circleCenter = CGPoint(x: center.x + (circleRadius + circleGap * 3/2) * cos(angle), y: center.y + (circleRadius + circleGap * 3/2) * sin(angle))
                 let circlePath = UIBezierPath(arcCenter: circleCenter, radius: circleGap/2, startAngle: 0, endAngle: CGFloat(2 * Float.pi), clockwise: true)
                 circlePath.stroke()
             }
