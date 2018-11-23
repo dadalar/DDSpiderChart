@@ -100,7 +100,7 @@ extension DDSpiderChartView {
             linePath.addLine(to: CGPoint(x: x, y: y))
             linePath.stroke()
 
-            var circleCenter = 0.0
+            var circleCenter = CGPoint(x: center.x + (circleRadius) * cos(angle), y: center.y + (circleRadius) * sin(angle))
             if endLineCircles {
                 // Draw circle at the end the line
                 circleCenter = CGPoint(x: center.x + (circleRadius + circleGap * 3/2) * cos(angle), y: center.y + (circleRadius + circleGap * 3/2) * sin(angle))
