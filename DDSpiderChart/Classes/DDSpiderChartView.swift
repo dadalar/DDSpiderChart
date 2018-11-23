@@ -80,7 +80,8 @@ extension DDSpiderChartView {
     override open func draw(_ rect: CGRect) {
         let center = CGPoint(x: rect.width/2, y: rect.height/2)
         // Draw circles
-        for i in 1...circleCount {
+        let circlesToDraw = endLineCircles ? circleCount : circleCount + 1
+        for i in 1...circlesToDraw {
             let radius = CGFloat(i) * circleGap
             let circlePath = UIBezierPath(arcCenter: center, radius: radius, startAngle: 0, endAngle: CGFloat(2 * Float.pi), clockwise: true)
             let color = (i % 2 == 0) ? self.color : self.color.withAlphaComponent(0.5)
