@@ -81,7 +81,6 @@ extension DDSpiderChartView {
         let center = CGPoint(x: rect.width/2, y: rect.height/2)
         // Draw circles
         let circlesToDraw = endLineCircles ? circleCount : circleCount + 1
-        print("[DDSpiderChartView]", "Draw circles", circlesToDraw)
         for i in 1...circlesToDraw {
             let radius = CGFloat(i) * circleGap
             let circlePath = UIBezierPath(arcCenter: center, radius: radius, startAngle: 0, endAngle: CGFloat(2 * Float.pi), clockwise: true)
