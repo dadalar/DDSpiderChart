@@ -1,16 +1,16 @@
 PODS:
-  - DDSpiderChart (0.1.0)
+  - DDSpiderChart (0.4)
 
 DEPENDENCIES:
   - DDSpiderChart (from `../`)
 
 EXTERNAL SOURCES:
   DDSpiderChart:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  DDSpiderChart: 15cc3ea7daef2bd470829d99a11726904f4a6e3b
+  DDSpiderChart: e1388f5693652586cb56c514d72b4161b8fa089d
 
-PODFILE CHECKSUM: 26b069525e6cbf4b0080d0c9729bc3e2776ac81b
+PODFILE CHECKSUM: 95911bb96e668177e01107197a53d5ef741b2a7c
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

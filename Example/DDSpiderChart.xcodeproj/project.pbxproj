@@ -165,7 +165,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				25FAC227B95B7421EEE14A13 /* [CP] Embed Pods Frameworks */,
-				76CE8FD85A7EC9697C514279 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,7 +184,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				AFD3CC367E5C93EF85AF34A1 /* [CP] Embed Pods Frameworks */,
-				3D577E3BE5F63742EBFAE254 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,36 +270,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D577E3BE5F63742EBFAE254 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		76CE8FD85A7EC9697C514279 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		85CE72ECD87289A73A656F42 /* [CP] Check Pods Manifest.lock */ = {
