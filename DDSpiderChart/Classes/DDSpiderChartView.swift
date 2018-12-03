@@ -115,8 +115,14 @@ extension DDSpiderChartView {
             
             let categoryStringSize = axis.size()
             let categoryStringPadding = circleGap/2 + 5
-            let categoryStringOrigin = CGPoint(x: circleCenter.x-(index == 0 ? categoryStringSize.width/2 : (isOnLeft ? categoryStringSize.width+categoryStringPadding : -categoryStringPadding)), y: circleCenter.y+(isOnTop ? (-(categoryStringSize.height+categoryStringPadding)) : (categoryStringPadding)))
-            axis.drawDrawable(with: .init(origin: categoryStringOrigin, size: categoryStringSize))
+            if endLineCircles {
+                let categoryStringOrigin = CGPoint(x: circleCenter.x - categoryStringSize.width/2, y: circleCenter.y+(isOnTop ? (-(categoryStringSize.height+categoryStringPadding)) : (categoryStringPadding)))
+                axis.drawDrawable(with: .init(origin: categoryStringOrigin, size: categoryStringSize))
+            }
+            else {
+                let categoryStringOrigin = CGPoint(x: circleCenter.x-(index == 0 ? categoryStringSize.width/2 : (isOnLeft ? categoryStringSize.width+categoryStringPadding : -categoryStringPadding)), y: circleCenter.y+(isOnTop ? (-(categoryStringSize.height+categoryStringPadding)) : (categoryStringPadding)))
+                axis.drawDrawable(with: .init(origin: categoryStringOrigin, size: categoryStringSize))
+            }
         }
         
     }
