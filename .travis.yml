@@ -2,6 +2,11 @@ matrix:
   include:
     - os: osx
       language: objective-c
+      osx_image: xcode10.2
+      xcode_sdk: 12.0
+      env: SWFT=5.0
+    - os: osx
+      language: objective-c
       osx_image: xcode10
       xcode_sdk: 12.0
       env: SWFT=4.2
