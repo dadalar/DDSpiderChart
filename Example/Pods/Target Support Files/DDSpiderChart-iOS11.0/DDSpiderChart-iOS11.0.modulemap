@@ -1,0 +1,6 @@
+framework module DDSpiderChart {
+  umbrella header "DDSpiderChart-iOS11.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

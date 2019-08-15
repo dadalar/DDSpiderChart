@@ -16,6 +16,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		FB3A58681EB7F7DF00950D7E /* DDSpiderChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3A58671EB7F7DF00950D7E /* DDSpiderChart.framework */; };
+		FB40534D230621CB00DFE648 /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40534B2306219B00DFE648 /* SnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		F3EA3B209F41A6C298FA68FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F6AACBCBF4ED89551F22CAE7 /* Pods-DDSpiderChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSpiderChart_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FB3A58671EB7F7DF00950D7E /* DDSpiderChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DDSpiderChart.framework; path = "Pods/../build/Debug-iphoneos/DDSpiderChart/DDSpiderChart.framework"; sourceTree = "<group>"; };
+		FB40534B2306219B00DFE648 /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				FB40534B2306219B00DFE648 /* SnapshotTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -262,7 +265,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DDSpiderChart/DDSpiderChart.framework",
+				"${BUILT_PRODUCTS_DIR}/DDSpiderChart-iOS8.0/DDSpiderChart.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -298,11 +301,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DDSpiderChart/DDSpiderChart.framework",
+				"${BUILT_PRODUCTS_DIR}/DDSpiderChart-iOS11.0/DDSpiderChart.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDSpiderChart.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapshotTesting.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -344,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				FB40534D230621CB00DFE648 /* SnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +516,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,6 +535,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/DDSpiderChart",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

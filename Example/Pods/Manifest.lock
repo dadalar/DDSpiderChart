@@ -1,8 +1,14 @@
 PODS:
   - DDSpiderChart (0.4)
+  - SnapshotTesting (1.5.0)
 
 DEPENDENCIES:
   - DDSpiderChart (from `../`)
+  - SnapshotTesting
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapshotTesting
 
 EXTERNAL SOURCES:
   DDSpiderChart:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DDSpiderChart: b46ba1b4320e69921d370193dfe4a2c3d7fcb3c9
+  SnapshotTesting: 9ca1d80f6322509a035856170c11d0571b1f7171
 
-PODFILE CHECKSUM: 95911bb96e668177e01107197a53d5ef741b2a7c
+PODFILE CHECKSUM: e45acb11cff6baaf218f8029f88b47c17bbbd409
 
 COCOAPODS: 1.7.5

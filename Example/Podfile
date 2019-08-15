@@ -11,6 +11,10 @@ target 'DDSpiderChart_Example' do
 end
 
 target 'DDSpiderChart_Tests' do
+    platform :ios, '11.0'
+  
     inherit! :search_paths
     standard_pods
+    
+    pod 'SnapshotTesting'
 end
