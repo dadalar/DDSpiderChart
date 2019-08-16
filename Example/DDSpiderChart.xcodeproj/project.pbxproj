@@ -262,7 +262,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DDSpiderChart-iOS8.0/DDSpiderChart.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -271,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		85CE72ECD87289A73A656F42 /* [CP] Check Pods Manifest.lock */ = {
@@ -298,7 +298,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DDSpiderChart-iOS11.0/DDSpiderChart.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework",
 			);
@@ -309,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E50E3FE0726E2E02808FC2DB /* [CP] Check Pods Manifest.lock */ = {
