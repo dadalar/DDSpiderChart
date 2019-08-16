@@ -15,7 +15,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		FB3A58681EB7F7DF00950D7E /* DDSpiderChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3A58671EB7F7DF00950D7E /* DDSpiderChart.framework */; };
 		FB40534D230621CB00DFE648 /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40534B2306219B00DFE648 /* SnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB3A58681EB7F7DF00950D7E /* DDSpiderChart.framework in Frameworks */,
 				5F4E2671011D1CF70730D282 /* Pods_DDSpiderChart_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
