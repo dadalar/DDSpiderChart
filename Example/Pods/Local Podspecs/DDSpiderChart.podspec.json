@@ -1,6 +1,6 @@
 {
   "name": "DDSpiderChart",
-  "version": "0.4",
+  "version": "0.4.1",
   "summary": "Easy to use Spider (Radar) Chart library for iOS written in Swift.",
   "homepage": "https://github.com/dadalar/DDSpiderChart",
   "screenshots": [
@@ -16,10 +16,10 @@
   },
   "source": {
     "git": "https://github.com/dadalar/DDSpiderChart.git",
-    "tag": "0.4"
+    "tag": "0.4.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
-  "source_files": "DDSpiderChart/Classes/**/*"
+  "source_files": "Sources/DDSpiderChart/Classes/**/*"
 }
