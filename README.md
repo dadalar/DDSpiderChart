@@ -10,6 +10,7 @@ Easy to use Spider (Radar) Chart library for iOS written in Swift.
 <p align="center">
 <img src="https://raw.githubusercontent.com/dadalar/DDSpiderChart/master/Screenshots/sample1.png" width="280"><img src="https://raw.githubusercontent.com/dadalar/DDSpiderChart/master/Screenshots/sample2.png" width="280">
 <img src="https://raw.githubusercontent.com/dadalar/DDSpiderChart/master/Screenshots/sample3.png" width="280">
+<img src="/Screenshots/sample-movie.gif" width="280">
 </p>
 
 ## Requirements
@@ -37,7 +38,7 @@ Once you have your Swift package set up, adding TKRadarChart as a dependency is 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/pabloruan0710/DDSpiderChart", .upToNextMajor(from: "0.4.1"))
+    .package(url: "https://github.com/dadalar/DDSpiderChart", .upToNextMajor(from: "0.6"))
 ]
 ```
 

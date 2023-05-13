@@ -26,7 +26,7 @@ struct SwiftUIView: View {
     
     var body: some View {
         ZStack {
-            currentSample.bgColor.edgesIgnoringSafeArea(.top)
+            currentSample.bgColor.edgesIgnoringSafeArea(.vertical)
             VStack {
                 ZStack {
                     VStack(spacing: 20) {

@@ -13,14 +13,14 @@ import Foundation
 @available(iOS 14.0.0, *)
 public struct DDSpiderChart: UIViewRepresentable {
     
-    public var axes: [String] = []
-    public var values: [DDSpiderChartEntries] = []
-    public var color: Color = .gray
-    public var circleCount: Int = 10
-    public var circleGap: CGFloat = 10
-    public var endLineCircles: Bool = true
-    public var fontTitle: UIFont = .boldSystemFont(ofSize: 16)
-    public var textColor: Color = Color.black
+    private let axes: [String]
+    private let values: [DDSpiderChartEntries]
+    private let color: Color
+    private let circleCount: Int
+    private let circleGap: CGFloat
+    private let endLineCircles: Bool
+    private let fontTitle: UIFont
+    private let textColor: Color
     
     public init(axes: [String] = [],
                 values: [DDSpiderChartEntries] = [],
@@ -43,14 +43,14 @@ public struct DDSpiderChart: UIViewRepresentable {
     public func makeUIView(context: Context) -> DDSpiderChartView {
         let chart = DDSpiderChartView()
         chart.backgroundColor = .clear
-        chart.circleCount = circleCount
-        chart.circleGap = circleGap
-        chart.color = UIColor(color)
-        chart.endLineCircles = endLineCircles
         return chart
     }
     
     public func updateUIView(_ uiView: DDSpiderChartView, context: Context) {
+        uiView.circleCount = circleCount
+        uiView.circleGap = circleGap
+        uiView.color = UIColor(color)
+        uiView.endLineCircles = endLineCircles
         uiView.axes = axes.map { applyStyle($0) }
         values.forEach {
             uiView.addDataSet(values: $0.values, color: UIColor($0.color))
