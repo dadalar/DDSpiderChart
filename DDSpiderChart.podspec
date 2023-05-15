@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DDSpiderChart'
-  s.version          = '0.4'
+  s.version          = '0.6'
   s.summary          = 'Easy to use Spider (Radar) Chart library for iOS written in Swift.'
 
   s.homepage         = 'https://github.com/dadalar/DDSpiderChart'
@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.author           = { 'Deniz Adalar' => 'me@dadalar.net' }
   s.source           = { :git => 'https://github.com/dadalar/DDSpiderChart.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'DDSpiderChart/Classes/**/*'
+  s.source_files = 'Sources/DDSpiderChart/Classes/**/*'
 
 end

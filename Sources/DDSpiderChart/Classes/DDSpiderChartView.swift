@@ -47,6 +47,11 @@ import UIKit
         }
     }
     
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        setNeedsDisplay()
+    }
+    
     @discardableResult public func addDataSet(values: [Float], color: UIColor, animated: Bool = true) -> UIView? {
         guard values.count == axes.count else { return nil }
         
@@ -68,7 +73,7 @@ import UIKit
     }
     
     public func removeDataSetView(_ view: UIView) {
-        guard let index = views.index(where: { $0 === view }) else { return }
+        guard let index = views.firstIndex(where: { $0 === view }) else { return }
         views.remove(at: index)
         view.removeFromSuperview()
     }

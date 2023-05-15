@@ -10,13 +10,15 @@ Easy to use Spider (Radar) Chart library for iOS written in Swift.
 <p align="center">
 <img src="https://raw.githubusercontent.com/dadalar/DDSpiderChart/master/Screenshots/sample1.png" width="280"><img src="https://raw.githubusercontent.com/dadalar/DDSpiderChart/master/Screenshots/sample2.png" width="280">
 <img src="https://raw.githubusercontent.com/dadalar/DDSpiderChart/master/Screenshots/sample3.png" width="280">
+<img src="/Screenshots/sample-movie.gif" width="280">
 </p>
 
 ## Requirements
 
-- iOS 8.0+ / macOS 10.10+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 8.0+
+- iOS 11.0+ / macOS 11.10+ / tvOS 11.0+ / watchOS 9.0+
+- Xcode 12.0+
 - Swift 3.0+
+- SwiftUI 14+
 
 ## Installation
 
@@ -27,6 +29,17 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "DDSpiderChart"
+```
+
+#### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
+Once you have your Swift package set up, adding TKRadarChart as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/dadalar/DDSpiderChart", .upToNextMajor(from: "0.6"))
+]
 ```
 
 ## Usage
@@ -45,6 +58,19 @@ let spiderChartView = DDSpiderChartView(frame: .zero) // Replace with some frame
 spiderChartView.axes = ["Axis 1", "Axis 2", "Axis 3", "Axis 4"] // Set axes by giving their labels
 spiderChartView.addDataSet(values: [1.0, 0.5, 0.75, 0.6], color: .red) // Add first data set
 spiderChartView.addDataSet(values: [0.9, 0.7, 0.75, 0.7], color: .blue) // Add second data set
+```
+
+To create a new instance of the chart in SwiftUI:
+```swift
+DDSpiderChart(
+    axes: ["Axis 1", "Axis 2", "Axis 3", "Axis 4"],
+    values: [
+        DDSpiderChartEntries(values: [1.0, 0.5, 0.75, 0.6], color: .red),
+        DDSpiderChartEntries(values: [0.9, 0.7, 0.75, 0.7], color: .blue),
+    ],
+    fontTitle: .boldSystemFont(ofSize: 16),
+    textColor: .black
+).frame(width: 300, height: 300)
 ```
 
 To remove a data set from chart:
@@ -80,6 +106,11 @@ override func viewDidLoad() {
 ## Author
 
 Deniz Adalar, me@dadalar.net
+
+
+## Contributors
+
+Pablo Ruan, pabloruan@outlook.com (SwiftUI, SPM)
 
 ## License
 

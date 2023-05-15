@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D858565B3DFD03C1FBA4CFB /* Pods_DDSpiderChart_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385E050853BC48695309168B /* Pods_DDSpiderChart_Example.framework */; };
-		5F4E2671011D1CF70730D282 /* Pods_DDSpiderChart_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FAE7F1BFD36F112EC88155 /* Pods_DDSpiderChart_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		FACD97452A0EC40E0082F29F /* SampleSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD97442A0EC40E0082F29F /* SampleSwiftUIView.swift */; };
 		FB3A58681EB7F7DF00950D7E /* DDSpiderChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3A58671EB7F7DF00950D7E /* DDSpiderChart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		385E050853BC48695309168B /* Pods_DDSpiderChart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDSpiderChart_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* DDSpiderChart_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDSpiderChart_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,12 +30,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		655F189735898E12624EAC94 /* DDSpiderChart.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DDSpiderChart.podspec; path = ../DDSpiderChart.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6E3CCD98E35EE038E64279AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6F38D6BD364074313DA06F35 /* Pods-DDSpiderChart_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSpiderChart_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B0955A8AD40536282F15885E /* Pods-DDSpiderChart_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSpiderChart_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D6FAE7F1BFD36F112EC88155 /* Pods_DDSpiderChart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDSpiderChart_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F376DA039E62A427366438EF /* Pods-DDSpiderChart_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSpiderChart_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F3EA3B209F41A6C298FA68FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F6AACBCBF4ED89551F22CAE7 /* Pods-DDSpiderChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDSpiderChart_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FACD97442A0EC40E0082F29F /* SampleSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleSwiftUIView.swift; sourceTree = "<group>"; };
 		FB3A58671EB7F7DF00950D7E /* DDSpiderChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DDSpiderChart.framework; path = "Pods/../build/Debug-iphoneos/DDSpiderChart/DDSpiderChart.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D858565B3DFD03C1FBA4CFB /* Pods_DDSpiderChart_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,22 +48,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3A58681EB7F7DF00950D7E /* DDSpiderChart.framework in Frameworks */,
-				5F4E2671011D1CF70730D282 /* Pods_DDSpiderChart_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		424B79D6BD1E554FC3B7CA7D /* Pods */ = {
+		308E1471C4BF9738EB44B5F2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6F38D6BD364074313DA06F35 /* Pods-DDSpiderChart_Example.debug.xcconfig */,
-				F6AACBCBF4ED89551F22CAE7 /* Pods-DDSpiderChart_Example.release.xcconfig */,
-				B0955A8AD40536282F15885E /* Pods-DDSpiderChart_Tests.debug.xcconfig */,
-				F376DA039E62A427366438EF /* Pods-DDSpiderChart_Tests.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -80,8 +68,8 @@
 				607FACD21AFB9204008FA782 /* Example for DDSpiderChart */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				424B79D6BD1E554FC3B7CA7D /* Pods */,
 				DD8AB8D57033EC572FF1F5DE /* Frameworks */,
+				308E1471C4BF9738EB44B5F2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +87,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				FACD97442A0EC40E0082F29F /* SampleSwiftUIView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -147,8 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				FB3A58671EB7F7DF00950D7E /* DDSpiderChart.framework */,
-				385E050853BC48695309168B /* Pods_DDSpiderChart_Example.framework */,
-				D6FAE7F1BFD36F112EC88155 /* Pods_DDSpiderChart_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,11 +147,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DDSpiderChart_Example" */;
 			buildPhases = (
-				85CE72ECD87289A73A656F42 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				25FAC227B95B7421EEE14A13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,11 +164,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DDSpiderChart_Tests" */;
 			buildPhases = (
-				E50E3FE0726E2E02808FC2DB /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				AFD3CC367E5C93EF85AF34A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +189,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3HQEA3N4BF;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -254,86 +238,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		25FAC227B95B7421EEE14A13 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DDSpiderChart/DDSpiderChart.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDSpiderChart.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Example/Pods-DDSpiderChart_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85CE72ECD87289A73A656F42 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DDSpiderChart_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AFD3CC367E5C93EF85AF34A1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DDSpiderChart/DDSpiderChart.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDSpiderChart.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDSpiderChart_Tests/Pods-DDSpiderChart_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E50E3FE0726E2E02808FC2DB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DDSpiderChart_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACD97452A0EC40E0082F29F /* SampleSwiftUIView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -470,10 +380,11 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F38D6BD364074313DA06F35 /* Pods-DDSpiderChart_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3HQEA3N4BF;
 				INFOPLIST_FILE = DDSpiderChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -484,10 +395,11 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6AACBCBF4ED89551F22CAE7 /* Pods-DDSpiderChart_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3HQEA3N4BF;
 				INFOPLIST_FILE = DDSpiderChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -498,7 +410,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0955A8AD40536282F15885E /* Pods-DDSpiderChart_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -520,7 +431,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F376DA039E62A427366438EF /* Pods-DDSpiderChart_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
