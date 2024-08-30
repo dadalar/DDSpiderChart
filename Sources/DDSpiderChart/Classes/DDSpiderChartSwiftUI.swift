@@ -21,6 +21,7 @@ public struct DDSpiderChart: UIViewRepresentable {
     private let endLineCircles: Bool
     private let fontTitle: UIFont
     private let textColor: Color
+    private let animated: Bool
     
     public init(axes: [String] = [],
                 values: [DDSpiderChartEntries] = [],
@@ -29,7 +30,8 @@ public struct DDSpiderChart: UIViewRepresentable {
                 circleGap: CGFloat = 10,
                 endLineCircles: Bool = true,
                 fontTitle: UIFont = .boldSystemFont(ofSize: 16),
-                textColor: Color = Color.black) {
+                textColor: Color = Color.black,
+                animated: Bool = true) {
         self.axes = axes
         self.values = values
         self.color = color
@@ -38,6 +40,7 @@ public struct DDSpiderChart: UIViewRepresentable {
         self.endLineCircles = endLineCircles
         self.fontTitle = fontTitle
         self.textColor = textColor
+        self.animated = animated
     }
     
     public func makeUIView(context: Context) -> DDSpiderChartView {
@@ -53,7 +56,7 @@ public struct DDSpiderChart: UIViewRepresentable {
         uiView.endLineCircles = endLineCircles
         uiView.axes = axes.map { applyStyle($0) }
         values.forEach {
-            uiView.addDataSet(values: $0.values, color: UIColor($0.color))
+            uiView.addDataSet(values: $0.values, color: UIColor($0.color), animated: animated)
         }
     }
     
